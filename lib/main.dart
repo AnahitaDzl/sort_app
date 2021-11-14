@@ -14,7 +14,12 @@ class BottomsheetModal extends StatefulWidget {
 }
 
 class _BottomsheetModalState extends State<BottomsheetModal> {
-
+IconData checkbox = Icons.check_box_outline_blank;
+void checkboxpressed() {
+  setState(() {
+    checkbox = Icons.check_box;
+  });
+}
   Modal modal = new Modal();
 
   @override
